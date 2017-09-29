@@ -84,7 +84,8 @@ class MyTestSuite(unittest.TestCase):
       try:
           WebDriverWait(browser, 20, 0.5).until(
               EC.presence_of_element_located(Locat))  # 每隔0.5秒判断是否存在对应元素，20秒期限
-          browser.find_element_by_xpath("//div[@class=\"month-data\"]/div[@class=\"month-week-row\"]/div[@class=\"day-cell active price-data stock-data\"]/div[text()=\"今天\"]").click()
+          '''browser.find_element_by_xpath("//div[@class=\"month-data\"]/div[@class=\"month-week-row\"]/div[@class=\"day-cell active price-data stock-data\"]/div[text()=\"今天\"]").click()'''
+          pass
       finally:
           pass
       time.sleep(2)
@@ -233,8 +234,8 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(MyTestSuite("test_appOrder"))
     suite.addTest(MyTestSuite("test_rebackOrder"))
-    suite.addTest(MyTestSuite("test_appOrder"))
-    suite.addTest(MyTestSuite("test_backOrder"))
+    #suite.addTest(MyTestSuite("test_appOrder"))
+    #suite.addTest(MyTestSuite("test_backOrder"))
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     filename = formdir + '\Results\\'+ now + 'result.html'
     fp = open(filename, 'wb')

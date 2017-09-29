@@ -10,4 +10,4 @@ from Selection.read_selection import read_selection
 def execute_selection():
     selection = read_selection()
     for scriptPath in selection:
-        os.system('python '+scriptPath)
+        os.system('py -3 '+scriptPath)#考虑到py2和py3的兼容性，采用兼容性命令
