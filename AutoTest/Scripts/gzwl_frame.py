@@ -11,11 +11,9 @@ formdir = os.path.dirname(os.getcwd())  # 获取上一级目录
 import unittest
 import datetime
 nowTime = datetime.datetime.now().strftime('%Y-%m-%d')
-import logging
 
-logging.basicConfig(filename=formdir + '\Logging\DateLog\%s.log' % nowTime,
-                    format='%(asctime)s -%(name)s-%(levelname)s-%(module)s-%(funcName)s-[line:%(lineno)d]:%(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S %p', level=logging.INFO)
+from Logging.LogConfig import LogAdd
+logger = LogAdd('root')
 
 from HTMLTestRunner import HTMLTestRunner
 from configwx.openConfig import getConfig
@@ -54,7 +52,7 @@ class MyTestSuite(unittest.TestCase):
         currentUrl = browser.current_url
         preUrl = web + "/account/entry/sign"
         if currentUrl != preUrl:
-            logging.info(u"准备登录页跳转不对！")
+            logger.info(u"准备登录页跳转不对！")
             raise Exception(u"准备登录页跳转不对！")
 
         else:
@@ -64,11 +62,11 @@ class MyTestSuite(unittest.TestCase):
             time.sleep(3)
             currentUrl1 = browser.current_url
             if currentUrl1 != webUrl:
-                logging.info(u"点击登录页跳转不对！")
+                logger.info(u"点击登录页跳转不对！")
                 raise Exception(u"点击登录页跳转不对！")
 
             else:
-                logging.info(u"登录成功！")
+                logger.info(u"登录成功！")
 
       browser.get(web + '/home')
       browser.find_element_by_xpath(
@@ -108,7 +106,7 @@ class MyTestSuite(unittest.TestCase):
       browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("880897")
       checkmoney = browser.find_element_by_xpath("//div[@class=\"product-info\"]/div[3]/span[2]").text
       if checkmoney != '¥ 0.01':
-          logging.info(u"我只有一分钱！")
+          logger.info(u"我只有一分钱！")
           raise Exception(u"真的付不起！")
       else:
           browser.find_element_by_xpath("//button[text()=\"立即支付\"]").click()
@@ -124,7 +122,7 @@ class MyTestSuite(unittest.TestCase):
               time.sleep(1)
               lineproductOrderCode = browser.find_element_by_xpath("//div[@class=\"order-detail\"]/div[1]/span[2]").text
               setVariable('lineproductOrderCode', lineproductOrderCode)
-              logging.info(u"本次生成的旅游订单code为：%s" % lineproductOrderCode)
+              logger.info(u"本次生成的旅游订单code为：%s" % lineproductOrderCode)
               time.sleep(2)
 
 
@@ -164,7 +162,7 @@ class MyTestSuite(unittest.TestCase):
         browser.find_element_by_xpath(
             "//div[@class=\"el-dialog__wrapper dialogTakeLimo\"]/div[1]/div[3]/div[1]/button[1]").click()
         time.sleep(1)
-        logging.info(u"%s旅游订单已完成！"% orderCode)
+        logger.info(u"%s旅游订单已完成！"% orderCode)
         browser.close()
 
     def test_rebackOrder(self):
@@ -220,7 +218,7 @@ class MyTestSuite(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_xpath(
             "//div[@class=\"el-dialog__wrapper refunds-form\"]/div[1]/div[3]/span[1]/button[3]").click()
-        logging.info(u"%s旅游订单已提交退款！"% orderCode)
+        logger.info(u"%s旅游订单已提交退款！"% orderCode)
         time.sleep(1)
 
 

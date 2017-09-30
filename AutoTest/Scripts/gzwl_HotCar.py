@@ -10,14 +10,14 @@ import unittest
 import datetime
 
 nowTime = datetime.datetime.now().strftime('%Y-%m-%d')
-import logging
 
-logging.basicConfig(filename=formdir + '\Logging\DateLog\%s.log' % nowTime,
+from Logging.LogConfig import LogAdd
+logger = LogAdd('root')
+'''logging.basicConfig(filename=formdir + '\Logging\DateLog\%s.log' % nowTime,
                     format='%(asctime)s -%(name)s-%(levelname)s-%(module)s-%(funcName)s-[line:%(lineno)d]:%(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S %p', level=logging.INFO)
+                    datefmt='%Y-%m-%d %H:%M:%S %p', level=logging.INFO)'''
 
 from HTMLTestRunner import HTMLTestRunner
-# from Logging.LogConfig import LogAdd
 from configwx.openConfig import getConfig
 from configwx.dbConnect import sqllink
 import json
@@ -43,9 +43,9 @@ class MyTestSuite(unittest.TestCase):
         response = requests.request("GET", url, headers=headers)  # Post接口调用
         results = response.text  # 对返回结果
         if response.status_code == 200:
-            logging.info("Success:Status code is 200")  # 验证接口返回状态码
+            logger.info("Success:Status code is 200")  # 验证接口返回状态码
         else:
-            logging.info("Http error code:%d" % response.status_code)
+            logger.info("Http error code:%d" % response.status_code)
             raise Exception("Http error code:%d" % response.status_code)
             # else:
             # logging.info("Http error code:%d" %response.status_code)
@@ -73,7 +73,7 @@ class MyTestSuite(unittest.TestCase):
             return Decimal.from_float(numf).quantize(Decimal("0.00"))
 
         if lenapi != lensql:
-            logging.info(u"Result error:筛选结果数量不一致！")
+            logger.info(u"Result error:筛选结果数量不一致！")
             raise Exception(u"Result error:筛选结果数量不一致！")
         else:
             n = 0  # 初始化验证数量
@@ -89,16 +89,16 @@ class MyTestSuite(unittest.TestCase):
                         del list(range(lensql))[j]  # 删除查找到的index
                         break
                     elif data[j].get('id') == data[-1].get('id'):
-                        logging.info(u"Check error:id为%s的房车未在数据库中查询到！" % d)  # api的数据在数据库查询的结果中没有找到，说明数据有问题
+                        logger.info(u"Check error:id为%s的房车未在数据库中查询到！" % d)  # api的数据在数据库查询的结果中没有找到，说明数据有问题
                         raise Exception(u"Check error:id为%s的房车未在数据库中查询到！" % d)
 
                     else:
                         continue
         if n < lenapi:
-            logging.info(u"Check count error:有%d条数据有误！" % (lenapi - n))
+            logger.info(u"Check count error:有%d条数据有误！" % (lenapi - n))
             raise Exception(u"Check count error:有%d条数据有误！" % (lenapi - n))
         else:
-            logging.info(u"Success:数据查询无误！")
+            logger.info(u"Success:数据查询无误！")
 
     def tearDown(self):
         pass

@@ -1,1 +1,3 @@
-testlog,≤ªø……æ
+2017-09-30 10:37:52,433 LogConfig.py[line:31] INFO LogConfig LogAdd aaaa
+2017-09-30 10:39:11,146 LogConfig.py[line:24] INFO LogConfig LogAdd aaaa
+2017-09-30 10:39:11,147 LogConfig.py[line:31] INFO LogConfig LogAdd aaaa
