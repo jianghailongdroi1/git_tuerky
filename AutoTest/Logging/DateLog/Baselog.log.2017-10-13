@@ -1,0 +1,24 @@
+2017-10-13 10:48:21,758 -root-INFO-gzwl_frame-test_appOrder-[line:65]:点击登录页跳转不对！
+2017-10-13 10:48:26,409 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
+2017-10-13 10:48:26,962 -root-INFO-gzwl_HotCar-testDatamatch-[line:101]:Success:数据查询无误！
+2017-10-13 10:57:43,440 -root-INFO-gzwl_frame-test_appOrder-[line:55]:准备登录页跳转不对！
+2017-10-13 10:57:58,571 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
+2017-10-13 10:57:59,096 -root-INFO-gzwl_HotCar-testDatamatch-[line:76]:Result error:筛选结果数量不一致！
+2017-10-13 11:02:39,539 -root-INFO-gzwl_frame-test_appOrder-[line:55]:准备登录页跳转不对！
+2017-10-13 11:02:44,325 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
+2017-10-13 11:02:44,945 -root-INFO-gzwl_HotCar-testDatamatch-[line:76]:Result error:筛选结果数量不一致！
+2017-10-13 11:11:18,109 -root-INFO-gzwl_frame-test_appOrder-[line:69]:登录成功！
+2017-10-13 11:11:24,100 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
+2017-10-13 11:11:24,565 -root-INFO-gzwl_HotCar-testDatamatch-[line:76]:Result error:筛选结果数量不一致！
+2017-10-13 11:18:36,429 -root-INFO-gzwl_frame-test_appOrder-[line:69]:登录成功！
+2017-10-13 11:19:06,331 -root-INFO-gzwl_frame-test_appOrder-[line:126]:本次生成的旅游订单code为：XLYD20171013000076
+2017-10-13 11:19:33,408 -root-INFO-gzwl_frame-test_rebackOrder-[line:222]:XLYD20171013000076
+旅游订单已提交退款！
+2017-10-13 11:19:35,175 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
+2017-10-13 11:19:35,902 -root-INFO-gzwl_HotCar-testDatamatch-[line:76]:Result error:筛选结果数量不一致！
+2017-10-13 11:39:29,155 -root-INFO-gzwl_frame-test_appOrder-[line:69]:登录成功！
+2017-10-13 11:39:55,775 -root-INFO-gzwl_frame-test_appOrder-[line:126]:本次生成的旅游订单code为：XLYD20171013000077
+2017-10-13 11:40:17,938 -root-INFO-gzwl_frame-test_rebackOrder-[line:222]:XLYD20171013000077
+旅游订单已提交退款！
+2017-10-13 11:40:19,724 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
+2017-10-13 11:40:20,201 -root-INFO-gzwl_HotCar-testDatamatch-[line:101]:Success:数据查询无误！

@@ -1,2 +1,4 @@
 __Author__:mytest
-lineproductOrderCode:XLYD20170929000125
+lineproductOrderCode:XLYD20171013000077
+appuser:18701913175
+apppassword:5412345678

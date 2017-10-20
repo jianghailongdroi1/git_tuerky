@@ -1,3 +1,258 @@
-2017-09-30 10:37:52,433 LogConfig.py[line:31] INFO LogConfig LogAdd aaaa
-2017-09-30 10:39:11,146 LogConfig.py[line:24] INFO LogConfig LogAdd aaaa
-2017-09-30 10:39:11,147 LogConfig.py[line:31] INFO LogConfig LogAdd aaaa
+(node:38532) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+info: Appium REST http interface listener started on 127.0.0.1:4723
+info: [debug] Non-default server args: {"app":"D:\\\\Test\\\\GZXL-pre.apk_1.2.apk","address":"127.0.0.1","logNoColors":true,"platformName":"Android","platformVersion":"23","automationName":"Appium"}
+info: Console LogLevel: debug
+info: --> POST /wd/hub/session {"capabilities":{"firstMatch":[],"alwaysMatch":{},"platformName":"Android","platformVersion":"6.0.1","deviceName":"oppo-oppo_r9s-8239aae3","app":"D:\\Test\\GZXL-pre.apk_1.2.apk"},"desiredCapabilities":{"platformName":"Android","platformVersion":"6.0.1","deviceName":"oppo-oppo_r9s-8239aae3","app":"D:\\Test\\GZXL-pre.apk_1.2.apk"}}
+info: Client User-Agent string: Python http auth
+info: [debug] No appActivity desired capability or server param. Parsing from apk.
+info: [debug] No appPackage desired capability or server param. Parsing from apk.
+info: [debug] Using local app from desired caps: D:\Test\GZXL-pre.apk_1.2.apk
+info: [debug] Creating new appium session 26f5621a-433a-4d5a-ab99-5ef5922e05b3
+info: Starting android appium
+info: [debug] Getting Java version
+info: Java version is: 1.8.0_121
+info: [debug] Checking whether adb is present
+info: [debug] Using adb from C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe
+info: [debug] Parsing package and activity from app manifest
+info: [debug] Checking whether aapt is present
+info: [debug] Using aapt from C:\Program Files (x86)\Android\android-sdk\build-tools\25.0.2\aapt.exe
+info: [debug] Extracting package and launch activity from manifest.
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\build-tools\25.0.2\aapt.exe" dump badging D:\Test\GZXL-pre.apk_1.2.apk
+info: [debug] badging package: com.gznb.xl
+info: [debug] badging act: com.gznb.xl.MainActivity
+info: [debug] Parsed package and activity are: com.gznb.xl/com.gznb.xl.MainActivity
+info: [debug] Using fast reset? true
+info: [debug] Preparing device for session
+info: [debug] Checking whether app is actually present
+info: Retrieving device
+info: [debug] Trying to find a connected android device
+info: [debug] Getting connected devices...
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" devices
+info: [debug] 1 device(s) connected
+info: Found device 8239aae3
+info: [debug] Setting device id to 8239aae3
+info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 wait-for-device
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "echo 'ready'"
+info: [debug] Starting logcat capture
+info: [debug] Getting device API level
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "getprop ro.build.version.sdk"
+info: [debug] Device is at API Level 23
+info: Device API level is: 23
+info: [debug] Extracting strings for language: default
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "getprop persist.sys.language"
+info: [debug] Current device persist.sys.language: 
+info: [debug] java -jar "C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-adb\jars\appium_apk_tools.jar" "stringsFromApk" "D:\Test\GZXL-pre.apk_1.2.apk" "C:\Users\ADMINI~1\AppData\Local\Temp\com.gznb.xl" 
+info: [debug] Reading strings from converted strings.json
+info: [debug] Setting language to default
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 push "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.gznb.xl\\strings.json" /data/local/tmp
+info: [debug] Checking whether aapt is present
+info: [debug] Using aapt from C:\Program Files (x86)\Android\android-sdk\build-tools\25.0.2\aapt.exe
+info: [debug] Retrieving process from manifest.
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\build-tools\25.0.2\aapt.exe" dump xmltree D:\Test\GZXL-pre.apk_1.2.apk AndroidManifest.xml
+info: [debug] Set app process to: com.gznb.xl
+info: [debug] Not uninstalling app since server not started with --full-reset
+info: [debug] Checking app cert for D:\Test\GZXL-pre.apk_1.2.apk.
+info: [debug] executing cmd: java -jar "C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-adb\jars\verify.jar" D:\Test\GZXL-pre.apk_1.2.apk
+info: [debug] App already signed.
+info: [debug] Zip-aligning D:\Test\GZXL-pre.apk_1.2.apk
+info: [debug] Checking whether zipalign is present
+info: [debug] Using zipalign from C:\Program Files (x86)\Android\android-sdk\build-tools\25.0.2\zipalign.exe
+info: [debug] Zip-aligning apk.
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\build-tools\25.0.2\zipalign.exe" -f 4 D:\Test\GZXL-pre.apk_1.2.apk C:\Users\ADMINI~1\AppData\Local\Temp\117920-38532-ovjlag.ndfwcxflxr\appium.tmp
+info: [debug] MD5 for app is 8be160ea194c764482f4bfcea20fde6a
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "ls /data/local/tmp/8be160ea194c764482f4bfcea20fde6a.apk"
+info: [debug] Getting install status for com.gznb.xl
+info: [debug] Getting device API level
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "getprop ro.build.version.sdk"
+info: [debug] Device is at API Level 23
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "pm list packages -3 com.gznb.xl"
+info: [debug] App is installed
+info: App is already installed, resetting app
+info: [debug] Running fast reset (stop and clear)
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "am force-stop com.gznb.xl"
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "pm clear com.gznb.xl"
+info: [debug] Forwarding system:4724 to device:4724
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 forward tcp:4724 tcp:4724
+info: [debug] Pushing appium bootstrap to device...
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 push "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+info: [debug] Pushing settings apk to device...
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 install "C:\Program Files (x86)\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+info: [debug] Pushing unlock helper app to device...
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 install "C:\Program Files (x86)\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+info: Starting App
+info: [debug] Attempting to kill all 'uiautomator' processes
+info: [debug] Getting all processes with 'uiautomator'
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "ps 'uiautomator'"
+info: [debug] No matching processes found
+info: [debug] Running bootstrap
+info: [debug] spawning: C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe -s 8239aae3 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.gznb.xl -e disableAndroidWatchers false
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+info: [debug] [BOOTSTRAP] [debug] Loading json...
+info: [debug] [BOOTSTRAP] [debug] json loading complete.
+info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+info: [debug] Waking up device if it's not alive
+info: [debug] Pushing command to appium work queue: ["wake",{}]
+info: [debug] [BOOTSTRAP] [debug] Client connected
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "dumpsys window"
+info: [debug] Screen already unlocked, continuing.
+info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+info: [debug] dataDir set to: /data/local/tmp
+info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+info: [debug] Getting device API level
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "getprop ro.build.version.sdk"
+info: [debug] Device is at API Level 23
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.gznb.xl/com.gznb.xl.MainActivity"
+info: [debug] Waiting for pkg "com.gznb.xl" and activity "com.gznb.xl.MainActivity" to be focused
+info: [debug] Getting focused package and activity
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "dumpsys window windows"
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "getprop ro.build.version.release"
+info: [debug] Device is at release version 6.0.1
+info: [debug] Device launched! Ready for commands
+info: [debug] Setting command timeout to the default of 60 secs
+info: [debug] Appium session started with sessionId 26f5621a-433a-4d5a-ab99-5ef5922e05b3
+info: <-- POST /wd/hub/session 303 12767.880 ms - 74 
+info: --> GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3 {}
+info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","platformVersion":"6.0.1","deviceName":"oppo-oppo_r9s-8239aae3","app":"D:\\Test\\GZXL-pre.apk_1.2.apk"},"platformName":"Android","deviceName":"8239aae3","app":"D:\\Test\\GZXL-pre.apk_1.2.apk"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3 200 3.573 ms - 545 {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","platformVersion":"6.0.1","deviceName":"oppo-oppo_r9s-8239aae3","app":"D:\\Test\\GZXL-pre.apk_1.2.apk"},"platformName":"Android","deviceName":"8239aae3","app":"D:\\Test\\GZXL-pre.apk_1.2.apk"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element {"using":"name","value":"探索","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+warn: [DEPRECATED] The name locator strategy has been deprecated and will be removed.  Please use the accessibility id locator strategy instead.
+info: [debug] Waiting up to 0ms for condition
+info: [debug] Pushing command to appium work queue: ["find",{"strategy":"name","selector":"探索","context":"","multiple":false}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"name","selector":"探索","context":"","multiple":false}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: find
+info: [debug] [BOOTSTRAP] [debug] Finding 探索 using NAME with the contextId:  multiple: false
+info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=探索, INSTANCE=0]
+info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[TEXT=探索, INSTANCE=0]
+info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+info: [debug] [BOOTSTRAP] [debug] Finding 探索 using NAME with the contextId:  multiple: false
+info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=探索, INSTANCE=0]
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element 200 5717.920 ms - 87 {"status":0,"value":{"ELEMENT":"1"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element {"using":"accessibility id","value":"探索","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] Waiting up to 0ms for condition
+info: [debug] Pushing command to appium work queue: ["find",{"strategy":"accessibility id","selector":"探索","context":"","multiple":false}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"accessibility id","selector":"探索","context":"","multiple":false}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: find
+info: [debug] [BOOTSTRAP] [debug] Finding 探索 using ACCESSIBILITY_ID with the contextId:  multiple: false
+info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=探索, INSTANCE=0]
+info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"2"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element 200 1421.670 ms - 87 {"status":0,"value":{"ELEMENT":"2"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+info: --> GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/screenshot {}
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 pull /data/local/tmp/screenshot.png "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\appium117920-38532-1qs4w5q.5ia1tw3ik9.png"
+info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xl4XHd97/HPmRnNql2yJduyZXmPF9lOnNhpCE0oi2ngEkrK1paWlAtlK1xCb6EUaEqa0guUtex7aVlDA0kgbcgCIYuDkzh2HC/xbnmRZFvbLJpFmvvHz6N1NJoZzWjmyO/X8+h525rtZGQrPl+d8ztW8t7WpAAAAAAAAGzMUeoNAAAAAAAAmCkGHAAAAAAAwPYYcAAAAAAAANtjwAEAAAAAAGyPAQcAAAAAALA9BhwAAAAAAMD2GHAAAAAAAADbY8ABAAAAAABsjwEHAAAAAACwPQYcAAAAAADA9hhwAAAAAAAA22PAAQAAAAAAbI8BBwBcqhqvMx+uQKm3pLwsfI3U/ArJ3zr5NldAanpZ4V7L2yy5qrK/f8O10pI3SQ0vKNw22EHLG6VVHzRfl0tV43Xma7/gVaXdjiV/Lm38N2nJn5V2O2bD/JdITdtzf5zlkjZ8Slr8J/m9bsO1krs+v8cCwCWOAQcAlJKvRaq9vDSvfcW3zYdnQWlev1Q2fVla93Gp4ZrJt7kbpA2flDZ+QarZPPn2lX8rbfqKdMV3per1M9+WFe+Trt9pdoaysfCPpMv+UVpw48xf204WvEJqe5vZyb9UtbzefO2XvaO021GzSWq+QareWNrtKLY1H5Y2f9V8r6hel9tjV7zPDErX/pO0/K9ze2zTdmnzly9+b56f22MBAHKVegMA4JJStcb89L1ms1S9VvIvlfqekR6/0RwZ4F+W+3MOhaUT35n5ts1/ieTwzPx5endKg2dn/jzF4G+9eASGJfXvls4/Mv722ivMbZLU/+z42yyX+fpJUuMLpfqtUsePpMOflmIX8tue+t8z7/lsv1/uevPaxRLvk84/XLznx9zgmS+5qmf/dYdjUuRE5vt0/Y/U8gapolba8Bnpd6/L7u9503ap7a3m1/17...","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/screenshot 200 2382.098 ms - 820798 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xl4XHd97/HPmRnNql2yJduyZXmPF9lOnNhpCE0oi2ngEkrK1paWlAtlK1xCb6EUaEqa0guUtex7aVlDA0kgbcgCIYuDkzh2HC/xbnmRZFvbLJpFmvvHz6N1NJoZzWjmyO/X8+h525rtZGQrPl+d8ztW8t7WpAAAAAAAAGzMUeoNAAAAAAAAmCkGHAAAAAAAwPYYcAAAAAAAANtjwAEAAAAAAGyPAQcAAAAAALA9BhwAAAAAAMD2GHAAAAAAAADbY8ABAAAAAABsjwEHAAAAAACwPQYcAAAAAADA9hhwAAAAAAAA22PAAQAAAAAAbI8BBwBcqhqvMx+uQKm3pLwsfI3U/ArJ3zr5NldAanpZ4V7L2yy5qrK/f8O10pI3SQ0vKNw22EHLG6VVHzRfl0tV43Xma7/gVaXdjiV/Lm38N2nJn5V2O2bD/JdITdtzf5zlkjZ8Slr8J/m9bsO1krs+v8cCwCWOAQcAlJKvRaq9vDSvfcW3zYdnQWlev1Q2fVla93Gp4ZrJt7kbpA2flDZ+QarZPPn2lX8rbfqKdMV3per1M9+WFe+Trt9pdoaysfCPpMv+UVpw48xf204WvEJqe5vZyb9UtbzefO2XvaO021GzSWq+QareWNrtKLY1H5Y2f9V8r6hel9tjV7zPDErX/pO0/K9ze2zTdmnzly9+b56f22MBAHKVegMA4JJStcb89L1ms1S9VvIvlfqekR6/0RwZ4F+W+3MOhaUT35n5ts1/ieTwzPx5endKg2dn/jzF4G+9eASGJfXvls4/Mv722ivMbZLU/+z42yyX+fpJUuMLpfqtUsePpMOflmIX8tue+t8z7/lsv1/uevPaxRLvk84/XLznx9zgmS+5qmf/dYdjUuRE5vt0/Y/U8gapolba8Bnpd6/L7u9503ap7a3m1/17...","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/2/location {}
+warn: location will be removed in a future version of Appium, please use location_in_view
+info: [debug] Pushing command to appium work queue: ["element:getLocation",{"elementId":"2"}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getLocation","params":{"elementId":"2"}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: getLocation
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"x":0,"y":1800}}
+info: [debug] Responding to client with success: {"status":0,"value":{"x":0,"y":1800},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/2/location 200 1571.560 ms - 88 {"status":0,"value":{"x":0,"y":1800},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/2/size {}
+info: [debug] Pushing command to appium work queue: ["element:getSize",{"elementId":"2"}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getSize","params":{"elementId":"2"}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: getSize
+info: [debug] Responding to client with success: {"status":0,"value":{"width":270,"height":111},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/2/size 200 668.105 ms - 98 {"status":0,"value":{"width":270,"height":111},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"width":270,"height":111}}
+info: --> POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element {"using":"accessibility id","value":"探索","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] Waiting up to 0ms for condition
+info: [debug] Pushing command to appium work queue: ["find",{"strategy":"accessibility id","selector":"探索","context":"","multiple":false}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"accessibility id","selector":"探索","context":"","multiple":false}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: find
+info: [debug] [BOOTSTRAP] [debug] Finding 探索 using ACCESSIBILITY_ID with the contextId:  multiple: false
+info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=探索, INSTANCE=0]
+info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"3"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element 200 1554.742 ms - 87 {"status":0,"value":{"ELEMENT":"3"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+info: --> POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/3/click {"id":"3","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"3"}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: click
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/3/click 200 1269.819 ms - 76 {"status":0,"value":true,"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/screenshot {}
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 pull /data/local/tmp/screenshot.png "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\appium117920-38532-jw9whl.e40cz0k9.png"
+info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzsvXfcJclVn/9U6L7hjfNODjuzszO72qDV7ioLISMRJYONhLBJPzAIGRAYkBGYDBKIYBOERc4gkg3GBgw2BhRApEVCOWzOu7M78Y03dHdV/f441X3fmXnjxJ3ZevS5urPv7dvdt7u66pzvOadKhT8/EEgkEolEIpFIJBKJRCKRuILRl/sEEolEIpFIJBKJRCKRSCTOlyRwJBKJRCKRSCQSiUQikbjiSQJHIpFIJBKJRCKRSCQSiSueJHAkEolEIpFIJBKJRCKRuOJJAkcikUgkEolEIpFIJBKJK54kcCQSiUQikUgkEolEIpG44kkCRyKRSCQSiUQikUgkEokrniRwJBKJRCKRSCQSiUQikbjiSQJHIpFIJBKJRCKRSCQSiSueJHAkEolEIpFIJBKJRCKRuOJJAkcikUgkEolEIpFIJBKJK54kcCQSiUQikUgkEolEIpG44kkCRyKRSDxT2fZyedmxy30mTy/2vBZ2fR50D5z9mR2DnZ9z4Y7V3gV2YuPbb30Z7P8K2PqpF+4crgT2fSnc8J1yX56pbHu53Pvdn395z2P/v4Pbfhb2f/nlPY9LwY7Pgp2v3Pz3lIVbfwKu+bJzO+7Wl0E+c27fTSQSiWc4SeBIJBKJy0lnH0w/9/Ic+3m/Ia/W7stz/MvF7b8At/wobH3p2Z/lW+HWH4fbfgam7jj78+u/HW7/RXjeO2Dy2ed/Loe/BV7xfnGGNsKeL4CbfgB2v/r8j30lsfvz4ODXipP/TGXfF8u9v+7rL+95TN0Ouz4XJm+7vOdxsbnxe+GOX5K+YvKWzX338LeIUHrzD8Ghb9rcd3e+Eu74hdg379jcdxOJRCKBvdwnkEgkEs8oJm6U6PvUHTB5M3SvhbkPwz++WjIDutdtfp+uB4/85vmf247PAt06//3Mvh8GT57/...","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- GET /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/screenshot 200 3887.804 ms - 2603794 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzsvXfcJclVn/9U6L7hjfNODjuzszO72qDV7ioLISMRJYONhLBJPzAIGRAYkBGYDBKIYBOERc4gkg3GBgw2BhRApEVCOWzOu7M78Y03dHdV/f441X3fmXnjxJ3ZevS5urPv7dvdt7u66pzvOadKhT8/EEgkEolEIpFIJBKJRCKRuILRl/sEEolEIpFIJBKJRCKRSCTOlyRwJBKJRCKRSCQSiUQikbjiSQJHIpFIJBKJRCKRSCQSiSueJHAkEolEIpFIJBKJRCKRuOJJAkcikUgkEolEIpFIJBKJK54kcCQSiUQikUgkEolEIpG44kkCRyKRSCQSiUQikUgkEokrniRwJBKJRCKRSCQSiUQikbjiSQJHIpFIJBKJRCKRSCQSiSueJHAkEolEIpFIJBKJRCKRuOJJAkcikUgkEolEIpFIJBKJK54kcCQSiUQikUgkEolEIpG44kkCRyKRSDxT2fZyedmxy30mTy/2vBZ2fR50D5z9mR2DnZ9z4Y7V3gV2YuPbb30Z7P8K2PqpF+4crgT2fSnc8J1yX56pbHu53Pvdn395z2P/v4Pbfhb2f/nlPY9LwY7Pgp2v3Pz3lIVbfwKu+bJzO+7Wl0E+c27fTSQSiWc4SeBIJBKJy0lnH0w/9/Ic+3m/Ia/W7stz/MvF7b8At/wobH3p2Z/lW+HWH4fbfgam7jj78+u/HW7/RXjeO2Dy2ed/Loe/BV7xfnGGNsKeL4CbfgB2v/r8j30lsfvz4ODXipP/TGXfF8u9v+7rL+95TN0Ouz4XJm+7vOdxsbnxe+GOX5K+YvKWzX338LeIUHrzD8Ghb9rcd3e+Eu74hdg379jcdxOJRCKBvdwnkEgkEs8oJm6U6PvUHTB5M3SvhbkPwz++WjIDutdtfp+uB4/85vmf247PAt06//3Mvh8GT57/...","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element {"using":"accessibility id","value":"旅游线路","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] Waiting up to 0ms for condition
+info: [debug] Pushing command to appium work queue: ["find",{"strategy":"accessibility id","selector":"旅游线路","context":"","multiple":false}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"accessibility id","selector":"旅游线路","context":"","multiple":false}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: find
+info: [debug] [BOOTSTRAP] [debug] Finding 旅游线路 using ACCESSIBILITY_ID with the contextId:  multiple: false
+info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[DESCRIPTION=旅游线路, INSTANCE=0]
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"4"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element 200 397.004 ms - 87 {"status":0,"value":{"ELEMENT":"4"},"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: --> POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/4/click {"id":"4","sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"4"}]
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+info: [debug] [BOOTSTRAP] [debug] Got command action: click
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: <-- POST /wd/hub/session/26f5621a-433a-4d5a-ab99-5ef5922e05b3/element/4/click 200 717.423 ms - 76 {"status":0,"value":true,"sessionId":"26f5621a-433a-4d5a-ab99-5ef5922e05b3"}
+info: [debug] Didn't get a new command in 60 secs, shutting down...
+info: Shutting down appium session
+info: [debug] Pressing the HOME button
+info: [debug] executing cmd: "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe" -s 8239aae3 shell "input keyevent 3"
+info: [debug] Stopping logcat capture
+info: [debug] Logcat terminated with code null, signal SIGTERM
+info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+info: [debug] [BOOTSTRAP] [debug] Closed client connection
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+info: [debug] [UIAUTOMATOR STDOUT] Time: 82.039
+info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+info: [debug] UiAutomator shut down normally
+info: [debug] Cleaning up android objects
+info: [debug] Cleaning up appium session
+info: [debug] We shut down because no new commands came in

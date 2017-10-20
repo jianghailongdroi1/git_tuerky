@@ -1,10 +1,13 @@
 1.python版本需求3.0以上（建议3.6.1或最新版）官网下载地址：https://www.python.org/downloads/release/python-361/（找到对应的windows版本）
 2.解压资源包后，安装python，最好安装的时候将设置环境变量勾选
-3.安装pip：解压pip-9.0.1.tar.gz（地址：https://pypi.python.org/pypi/pip），然后进入解压后的目录执行 python setup.py install
+3.安装pip：解压pip-9.0.1.tar.gz（地址：https://pypi.python.org/pypi/pip），然后进入解压后的目录执行 python setup.py install(pip安装的环境变量问题)
 4.安装selenium： pip install -U selenium
-5.selenium要启动chrome浏览器，需要将chromedriver.exe放到**\Python3\Scripts目录下即可（chromedriver.exe和浏览器的对应版本及资源可参考如下地址：
+5.selenium要启动chrome浏览器，需要将chromedriver.exe放到**\Python3\Scripts目录下（安装时该环境变量已被添加）即可（chromedriver.exe和浏览器的对应版本及资源可参考如下地址：
 http://blog.csdn.net/huilan_same/article/details/51896672，https://chromedriver.storage.googleapis.com/index.html）tip：建议chrome升级到最新
-6.将HtmlTestRunner.py文件放置到*\Python3\Lib目录下
-7.cmd命令行执行命令：pip install requests 
+6.friefox浏览器driver下载地址：https://github.com/mozilla/geckodriver/releases，对应各个系统版本，同样放到script目录即可，注意一下环境变量中是否有自己安装的firefox路径，没有要添加一下
+firefox需要升级到50.0版本以上
+////7.将HtmlTestRunner.py文件放置到*\Python3\Lib目录下
+///8.cmd命令行执行命令：pip install requests
                      pip install pymysql
                      pip install configparser
+9.py2py3的兼容，注意环境变量的修改，命令python换成py2或者py3就可以了

@@ -17,8 +17,8 @@ logger = LogAdd('root')
 
 from HTMLTestRunner import HTMLTestRunner
 from configwx.openConfig import getConfig
-from configwx.getEnv import getVariable
-from configwx.setEnv import setVariable
+from configwx.optEnv import operateEnv
+
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -39,7 +39,7 @@ class MyTestSuite(unittest.TestCase):
 
     def test_appOrder(self):
 
-      web = getConfig(0, formdir + '\configwx', 'baseData.conf', 'gzwl_web')
+      web = getConfig(0, formdir + '\configwx', 'baseData.conf', 'gzwl_web_pre')
       webUrl = web + '/account/index'
       browser.get(webUrl)
       time.sleep(2)
@@ -57,7 +57,7 @@ class MyTestSuite(unittest.TestCase):
 
         else:
             browser.find_element_by_xpath("//input[@type=\"tel\"]").send_keys("18701913175")
-            browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("54123456")
+            browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("54tomwx9154")
             browser.find_element_by_xpath("//button[@class=\"gz-btn\"]").click()
             time.sleep(3)
             currentUrl1 = browser.current_url
@@ -67,7 +67,8 @@ class MyTestSuite(unittest.TestCase):
 
             else:
                 logger.info(u"登录成功！")
-
+      else:
+          pass
       browser.get(web + '/home')
       browser.find_element_by_xpath(
           "//div[@class=\"container\"]/div[@class=\"home-quick-entry\"]/div[3]").click()
@@ -121,14 +122,14 @@ class MyTestSuite(unittest.TestCase):
           finally:
               time.sleep(1)
               lineproductOrderCode = browser.find_element_by_xpath("//div[@class=\"order-detail\"]/div[1]/span[2]").text
-              setVariable('lineproductOrderCode', lineproductOrderCode)
+              operateEnv.set_variable('lineproductOrderCode', lineproductOrderCode)
               logger.info(u"本次生成的旅游订单code为：%s" % lineproductOrderCode)
               time.sleep(2)
 
 
     def test_backOrder(self):
 
-        web = getConfig(1,formdir + '\configwx', 'baseData.conf', 'gzwl_web')
+        web = getConfig(1,formdir + '\configwx', 'baseData.conf', 'gzwl_web_pre')
         webUrl = web + '/login'
         browser.get(webUrl)
         browser.maximize_window()
@@ -167,7 +168,7 @@ class MyTestSuite(unittest.TestCase):
 
     def test_rebackOrder(self):
 
-        web = getConfig(1, formdir + '\configwx', 'baseData.conf', 'gzwl_web')
+        web = getConfig(1, formdir + '\configwx', 'baseData.conf', 'gzwl_web_pre')
         webUrl = web + '/login'
         browser.get(webUrl)
         browser.maximize_window()
@@ -180,7 +181,7 @@ class MyTestSuite(unittest.TestCase):
             "//div[@class=\"sidebar\"]/ul[@class=\"el-menu\"]/li[3]/div[@class=\"el-submenu__title\"]/i[@class=\"el-submenu__icon-arrow el-icon-arrow-down\"]").click()
         browser.find_element_by_xpath(
             "//div[@class=\"sidebar\"]/ul[@class=\"el-menu\"]/li[3]/ul[@class=\"el-menu\"]/li[3]").click()
-        orderCode = getVariable('lineproductOrderCode')
+        orderCode = operateEnv.get_variable('lineproductOrderCode')
         browser.find_element_by_xpath(
             "//form[@class=\"el-form el-form--label-right\"]/div[2]/div[1]/div[@class=\"el-form-item\"]/div[@class=\"el-form-item__content\"]/div[@class=\"el-input\"]/input[@autocomplete=\"off\"]").send_keys(
             orderCode)

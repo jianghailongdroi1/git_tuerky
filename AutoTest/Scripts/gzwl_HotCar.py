@@ -33,7 +33,7 @@ class MyTestSuite(unittest.TestCase):
         print("start...")
 
     def testCode(self):
-        config = getConfig(0,formdir + "\configwx", "baseData.conf","gzwl_url")  # 获取前台url
+        config = getConfig(0,formdir + "\configwx", "baseData.conf","gzwl_url_pre")  # 获取前台url
         request_url = "/home/hot-car"
         url = config + request_url
         headers = {
@@ -52,7 +52,7 @@ class MyTestSuite(unittest.TestCase):
 
     def testDatamatch(self):
         # 返回结果验证
-        config = getConfig(0,formdir + "\configwx", "baseData.conf","gzwl_url")  # 获取前台url
+        config = getConfig(0,formdir + "\configwx", "baseData.conf","gzwl_url_pre")  # 获取前台url
         request_url = "/home/hot-car"
         url = config + request_url
         headers = {
@@ -64,7 +64,7 @@ class MyTestSuite(unittest.TestCase):
         result = json.loads(results)
         # print(result)
         sql = "SELECT t.id,t.code,t.name,t.suitable_number,t.brand_id,p.id AS pid,p.name AS pname,m.id AS month_id,m.year,m.month,MIN(m.min_price)AS price FROM (SELECT * FROM `touring_car` WHERE is_delete = b'0' AND is_recommend = b'1' AND ENABLE = b'1') AS t LEFT JOIN  (SELECT * FROM touring_car_price_type WHERE `is_delete`= b'0' AND ENABLE = b'1') AS p ON p.`touring_car_id` = t.id  LEFT JOIN  (SELECT * FROM (SELECT *,base_price AS min_price FROM `touring_car_price_month` WHERE IF((LENGTH(CONCAT(YEAR,'-',MONTH))=6),INSERT(CONCAT(YEAR,'-',MONTH),5,1,'-0'),CONCAT(YEAR,'-',MONTH)) IN (IF(LEFT(DATE_SUB(NOW(),INTERVAL 0 MONTH),7)< LEFT(DATE_ADD(NOW(),INTERVAL (SELECT config_value FROM sys_config WHERE config_key = 'LeastAdvanceReserveDays' AND config_group = 'TouringCar' AND ENABLE = 1) DAY),7),NULL,LEFT(DATE_SUB(NOW(),INTERVAL 0 MONTH),7)),IF(LEFT(DATE_SUB(NOW(),INTERVAL -1 MONTH),7)< LEFT(DATE_ADD(NOW(),INTERVAL (SELECT config_value FROM sys_config WHERE config_key = 'LeastAdvanceReserveDays' AND config_group = 'TouringCar' AND ENABLE = 1) DAY),7),NULL,LEFT(DATE_SUB(NOW(),INTERVAL -1 MONTH),7)),IF(LEFT(DATE_SUB(NOW(),INTERVAL -2 MONTH),7)< LEFT(DATE_ADD(NOW(),INTERVAL (SELECT config_value FROM sys_config WHERE config_key = 'LeastAdvanceReserveDays' AND config_group = 'TouringCar' AND ENABLE = 1) DAY),7),NULL,LEFT(DATE_SUB(NOW(),INTERVAL -2 MONTH),7)),IF(LEFT(DATE_SUB(NOW(),INTERVAL -3 MONTH),7)< LEFT(DATE_ADD(NOW(),INTERVAL (SELECT config_value FROM sys_config WHERE config_key = 'LeastAdvanceReserveDays' AND config_group = 'TouringCar' AND ENABLE = 1) DAY),7),NULL,LEFT(DATE_SUB(NOW(),INTERVAL -3 MONTH),7)),IF(LEFT(DATE_SUB(NOW(),INTERVAL -4 MONTH),7)< LEFT(DATE_ADD(NOW(),INTERVAL (SELECT config_value FROM sys_config WHERE config_key = 'LeastAdvanceReserveDays' AND config_group = 'TouringCar' AND ENABLE = 1) DAY),7),NULL,LEFT(DATE_SUB(NOW(),INTERVAL -4 MONTH),7)),IF(LEFT(DATE_SUB(NOW(),INTERVAL -5 MONTH),7)< LEFT(DATE_ADD(NOW(),INTERVAL (SELECT config_value FROM sys_config WHERE config_key = 'LeastAdvanceReserveDays' AND config_group = 'TouringCar' AND ENABLE = 1) DAY),7),NULL,LEFT(DATE_SUB(NOW(),INTERVAL -5 MONTH),7))) AND is_delete = b'0' AND base_price <> 0 ORDER BY MONTH) g GROUP BY g.price_type_id ORDER BY MONTH) m ON m.price_type_id = p.id AND m.touring_car_id = p.touring_car_id WHERE p.id IS NOT NULL AND m.id IS NOT NULL GROUP BY t.code;"
-        data = sqllink("db_gzwl", sql)
+        data = sqllink("db_gzwl_pre", sql)
         # 校验数据数量，id，price匹配
         lenapi = len(result.get('data'))  # 获取列表内对象数量
         lensql = len(data)
