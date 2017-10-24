@@ -8,14 +8,13 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)  # 防止命令行找不到模块
 formdir = os.path.dirname(os.getcwd())  # 获取上一级目录
 variPath = os.path.join(curPath,'baseData.conf')
-logpath = os.path.join(formdir,'Logging\\DateLog\\log.log')
+logpath = os.path.join(formdir,'Logging\\DateLog\\log.log')#
 from appium import webdriver
 import subprocess
 import time
 import configparser
 from selenium.webdriver.support.ui import WebDriverWait
-from Logging.LogConfig import LogAdd
-logger = LogAdd('root')
+
 
 
 class AppSetting:
@@ -30,10 +29,10 @@ class AppSetting:
         try:
             s.connect((host,int(port)))
             s.shutdown(2)
-            logger.info(u'%s端口被占用' % port)
+            ptint(u'%s端口被占用' % port) #此处不使用日志记录的原因是因为该模块被调用，会和调用的模块形成多进程，而python的log多进程是不安全的，所以需要避免
             return True
         except:
-            logger.info(u'%s端口未使用' % port)
+            print(u'%s端口未使用' % port)
             return False
 
     def stat_Appium(self):
@@ -45,11 +44,11 @@ class AppSetting:
         dev = self.__configParser.get('appsetting', 'dev')
         path = self.__configParser.get('appsetting', 'path')
         cmd = 'start /b appium --address %s --port %s --app %s ' \
-              '--platform-name %s --platform-version %s --automation-name Appium --log-no-color'%(host,port,path,platform,apiversion)
+              '--platform-name %s --platform-version %s --automation-name Appium --log-no-color'%(host,port,path,platform,apiversion)#--log-no-color
         if self.port_in_use(host, port):
             os.system('taskkill /f /t /im node.exe')     #杀进程
-        p = subprocess.call(cmd, shell=True, stdout=open(logpath, 'w'),   #打开进程
-                                stderr=subprocess.STDOUT)
+        p = subprocess.call(cmd, shell=True , stdout=open(logpath, 'w'),stderr=subprocess.STDOUT)   #打开进程
+
 
         time.sleep(2)
         PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))

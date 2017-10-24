@@ -1,4 +1,8 @@
 __Author__:mytest
-lineproductOrderCode:XLYD20171013000077
+lineproductOrderCode:XLYD20171020000089
 appuser:18701913175
-apppassword:5412345678
+apppassword:NTQxMjM0NTY3OA==
+wxuser:18701913175
+wxpassword:NTR0b213eDkx
+wxpaypassword:ODM3OTE1
+applinorder:XLYD20171024000109

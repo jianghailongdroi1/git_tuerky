@@ -1,19 +1,127 @@
-2017-10-19 10:15:10,254 -root-INFO-Login-Log_on-[line:26]:首页加载成功！
-2017-10-19 10:27:30,481 -root-INFO-Login-Log_on-[line:26]:首页加载成功！
-2017-10-19 10:27:36,528 -root-INFO-Login-Log_on-[line:33]:我的页面跳转正确
-2017-10-19 10:29:07,216 -root-INFO-Login-Log_on-[line:26]:首页加载成功！
-2017-10-19 10:29:11,558 -root-INFO-Login-Log_on-[line:33]:我的页面跳转正确
-2017-10-19 10:29:18,480 -root-INFO-Login-Log_on-[line:47]:登录页面跳转成功！
-2017-10-19 10:35:41,476 -root-INFO-Login-Log_on-[line:26]:首页加载成功！
-2017-10-19 10:35:47,399 -root-INFO-Login-Log_on-[line:33]:我的页面跳转正确
-2017-10-19 10:35:54,421 -root-INFO-Login-Log_on-[line:47]:登录页面跳转成功！
-2017-10-19 10:36:20,721 -root-INFO-Login-Log_on-[line:58]:登录成功！
-2017-10-19 16:33:21,148 -root-INFO-AppSetting-port_is_free-[line:33]:4723端口被占用
-2017-10-19 16:35:13,505 -root-INFO-AppSetting-port_is_free-[line:33]:4723端口被占用
-2017-10-19 17:14:31,287 -root-INFO-AppSetting-port_is_free-[line:33]:4723端口被占用
-2017-10-19 17:28:48,496 -root-INFO-AppSetting-port_is_free-[line:36]:4723端口未使用
-2017-10-19 17:30:12,981 -root-INFO-AppSetting-port_is_free-[line:36]:4723端口未使用
-2017-10-19 18:34:54,011 -root-INFO-AppSetting-port_in_use-[line:33]:4723端口被占用
-2017-10-19 18:41:52,236 -root-INFO-gzwl_HotCar-testCode-[line:46]:Success:Status code is 200
-2017-10-19 18:41:52,751 -root-INFO-gzwl_HotCar-testDatamatch-[line:101]:Success:数据查询无误！
-2017-10-19 19:04:42,140 -root-INFO-AppSetting-port_in_use-[line:33]:4723端口被占用
+2017-10-24 10:17:39,008 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\10_17_07探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏10_17_07.png
+2017-10-24 10:17:42,468 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 10:17:49,790 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏10_17_07.png
+2017-10-24 10:17:58,836 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏10_17_07.png
+2017-10-24 10:18:26,153 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏10_17_07.png
+2017-10-24 10:18:31,381 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏10_17_07.png
+2017-10-24 10:18:35,442 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏10_17_07.png
+2017-10-24 10:18:49,567 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏10_17_07.png
+2017-10-24 10:19:02,455 -root-INFO-TravelineOrd-set_traveline-[line:165]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏10_17_07.png
+2017-10-24 10:45:59,834 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\10_45_22探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏10_45_22.png
+2017-10-24 10:46:02,754 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 10:46:10,882 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏10_45_22.png
+2017-10-24 10:46:20,352 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏10_45_22.png
+2017-10-24 10:46:53,303 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏10_45_22.png
+2017-10-24 10:47:01,275 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏10_45_22.png
+2017-10-24 10:47:05,390 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏10_45_22.png
+2017-10-24 10:47:19,090 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏10_45_22.png
+2017-10-24 10:47:29,372 -root-INFO-TravelineOrd-set_traveline-[line:165]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏10_45_22.png
+2017-10-24 11:03:12,606 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\11_02_40探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏11_02_40.png
+2017-10-24 11:03:15,899 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 11:03:24,020 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏11_02_40.png
+2017-10-24 11:03:32,553 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏11_02_40.png
+2017-10-24 11:04:07,568 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏11_02_40.png
+2017-10-24 11:04:14,470 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏11_02_40.png
+2017-10-24 11:04:19,478 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏11_02_40.png
+2017-10-24 11:04:29,585 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏11_02_40.png
+2017-10-24 11:04:37,513 -root-INFO-TravelineOrd-set_traveline-[line:165]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏11_02_40.png
+2017-10-24 11:13:04,717 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\11_12_34探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏11_12_34.png
+2017-10-24 11:13:07,938 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 11:13:16,203 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏11_12_34.png
+2017-10-24 11:13:24,693 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏11_12_34.png
+2017-10-24 11:13:57,519 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏11_12_34.png
+2017-10-24 11:14:05,405 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏11_12_34.png
+2017-10-24 11:14:10,691 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏11_12_34.png
+2017-10-24 11:14:24,504 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏11_12_34.png
+2017-10-24 11:14:36,500 -root-INFO-TravelineOrd-set_traveline-[line:165]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏11_12_34.png
+2017-10-24 11:16:30,268 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\11_16_00探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏11_16_00.png
+2017-10-24 11:16:33,710 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 11:16:41,580 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏11_16_00.png
+2017-10-24 11:16:50,741 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏11_16_00.png
+2017-10-24 11:17:20,653 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏11_16_00.png
+2017-10-24 11:17:26,647 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏11_16_00.png
+2017-10-24 11:17:30,675 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏11_16_00.png
+2017-10-24 11:17:39,833 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏11_16_00.png
+2017-10-24 11:17:49,715 -root-INFO-TravelineOrd-set_traveline-[line:165]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏11_16_00.png
+2017-10-24 11:20:02,836 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\11_19_30探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏11_19_30.png
+2017-10-24 11:20:06,014 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 11:20:14,745 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏11_19_30.png
+2017-10-24 11:20:23,819 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏11_19_30.png
+2017-10-24 11:20:53,555 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏11_19_30.png
+2017-10-24 11:21:01,207 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏11_19_30.png
+2017-10-24 11:21:06,950 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏11_19_30.png
+2017-10-24 11:21:17,202 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏11_19_30.png
+2017-10-24 11:21:25,897 -root-INFO-TravelineOrd-set_traveline-[line:165]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏11_19_30.png
+2017-10-24 11:44:43,990 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\11_44_13探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏11_44_13.png
+2017-10-24 11:44:47,963 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 11:44:55,410 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏11_44_13.png
+2017-10-24 11:45:05,682 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏11_44_13.png
+2017-10-24 11:45:43,508 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏11_44_13.png
+2017-10-24 11:45:50,013 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏11_44_13.png
+2017-10-24 11:45:55,473 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏11_44_13.png
+2017-10-24 11:46:11,734 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏11_44_13.png
+2017-10-24 13:10:31,629 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\13_10_07探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏13_10_07.png
+2017-10-24 13:10:35,814 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 13:10:43,754 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏13_10_07.png
+2017-10-24 13:10:55,092 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏13_10_07.png
+2017-10-24 13:11:30,170 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏13_10_07.png
+2017-10-24 13:11:38,170 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏13_10_07.png
+2017-10-24 13:11:46,197 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏13_10_07.png
+2017-10-24 13:11:59,142 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏13_10_07.png
+2017-10-24 13:24:40,290 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\13_24_10探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏13_24_10.png
+2017-10-24 13:24:45,043 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 13:24:54,007 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏13_24_10.png
+2017-10-24 13:25:02,910 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏13_24_10.png
+2017-10-24 13:25:32,775 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏13_24_10.png
+2017-10-24 13:25:40,329 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏13_24_10.png
+2017-10-24 13:25:45,272 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏13_24_10.png
+2017-10-24 13:25:57,390 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏13_24_10.png
+2017-10-24 13:26:19,790 -root-INFO-TravelineOrd-set_traveline-[line:176]:支付异常！截屏文件：D:\AutoTest\screenshot\sh2017-10-24\支付异常截屏13_24_10.png
+2017-10-24 13:31:50,287 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\13_31_23探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏13_31_23.png
+2017-10-24 13:31:54,028 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 13:32:01,064 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏13_31_23.png
+2017-10-24 13:32:09,537 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏13_31_23.png
+2017-10-24 13:32:37,889 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏13_31_23.png
+2017-10-24 13:32:44,219 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏13_31_23.png
+2017-10-24 13:32:48,414 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏13_31_23.png
+2017-10-24 13:32:59,742 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏13_31_23.png
+2017-10-24 13:46:45,332 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\13_46_18探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏13_46_18.png
+2017-10-24 13:46:50,868 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 13:46:59,405 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏13_46_18.png
+2017-10-24 13:47:08,381 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏13_46_18.png
+2017-10-24 13:47:37,859 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏13_46_18.png
+2017-10-24 13:47:45,841 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏13_46_18.png
+2017-10-24 13:47:50,830 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏13_46_18.png
+2017-10-24 13:48:00,803 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏13_46_18.png
+2017-10-24 13:48:39,602 -root-INFO-TravelineOrd-set_traveline-[line:200]:支付成功,截屏文件为：D:\AutoTest\screenshot\sh2017-10-24\支付成功截屏13_46_18.png
+2017-10-24 14:45:07,911 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\14_44_40探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏14_44_40.png
+2017-10-24 14:45:11,188 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 14:45:18,638 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏14_44_40.png
+2017-10-24 14:45:28,463 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏14_44_40.png
+2017-10-24 14:46:02,426 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏14_44_40.png
+2017-10-24 14:46:10,353 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏14_44_40.png
+2017-10-24 14:46:18,422 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏14_44_40.png
+2017-10-24 14:46:30,453 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏14_44_40.png
+2017-10-24 14:46:42,413 -root-INFO-TravelineOrd-set_traveline-[line:166]:跳转微信登录页成功截屏文件：D:\AutoTest\screenshot\sh2017-10-24\跳转微信登录页成功截屏14_44_40.png
+2017-10-24 14:47:34,816 -root-INFO-TravelineOrd-set_traveline-[line:203]:微信支付成功,截屏文件为：D:\AutoTest\screenshot\sh2017-10-24\微信支付成功14_44_40.png
+2017-10-24 14:47:41,580 -root-INFO-TravelineOrd-set_traveline-[line:208]:支付成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\支付成功14_44_40.png
+2017-10-24 14:52:29,657 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\14_52_02探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏14_52_02.png
+2017-10-24 14:52:33,716 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 14:52:42,752 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏14_52_02.png
+2017-10-24 14:52:51,826 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏14_52_02.png
+2017-10-24 14:53:21,828 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏14_52_02.png
+2017-10-24 14:53:29,247 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏14_52_02.png
+2017-10-24 14:53:34,201 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏14_52_02.png
+2017-10-24 14:53:45,650 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏14_52_02.png
+2017-10-24 14:54:26,617 -root-INFO-TravelineOrd-set_traveline-[line:204]:微信支付成功,截屏文件为：D:\AutoTest\screenshot\sh2017-10-24\微信支付成功14_52_02.png
+2017-10-24 14:54:35,798 -root-INFO-TravelineOrd-set_traveline-[line:209]:支付成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\支付成功14_52_02.png
+2017-10-24 14:59:45,392 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\14_59_21探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-24\探索页截屏14_59_21.png
+2017-10-24 14:59:49,056 -root-INFO-TravelineOrd-set_traveline-[line:57]:选择第3个旅游项目下订单
+2017-10-24 14:59:57,688 -root-INFO-TravelineOrd-set_traveline-[line:68]:旅游订单定位成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\旅游订单成功截屏截屏14_59_21.png
+2017-10-24 15:00:06,763 -root-INFO-TravelineOrd-set_traveline-[line:82]:云南三日游1 项目打开成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-24\云南三日游1 旅游项目截屏14_59_21.png
+2017-10-24 15:00:52,236 -root-INFO-TravelineOrd-set_traveline-[line:110]:D:\AutoTest\screenshot\sh2017-10-24\旅游订单可定天数截屏14_59_21.png
+2017-10-24 15:01:00,076 -root-INFO-TravelineOrd-set_traveline-[line:124]:填写信息页面打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\旅游订单填写信息截屏14_59_21.png
+2017-10-24 15:01:05,055 -root-INFO-TravelineOrd-set_traveline-[line:136]:旅游订单选择游客页面打开成功,截屏文件:D:\AutoTest\screenshot\sh2017-10-24\旅游订单选择游客页面截屏14_59_21.png
+2017-10-24 15:01:16,631 -root-INFO-TravelineOrd-set_traveline-[line:152]:在线支付页打开成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\在线支付页成功截屏14_59_21.png
+2017-10-24 15:02:00,074 -root-INFO-TravelineOrd-set_traveline-[line:204]:微信支付成功,截屏文件为：D:\AutoTest\screenshot\sh2017-10-24\微信支付成功14_59_21.png
+2017-10-24 15:02:06,572 -root-INFO-TravelineOrd-set_traveline-[line:209]:支付成功，截屏文件：D:\AutoTest\screenshot\sh2017-10-24\支付成功14_59_21.png

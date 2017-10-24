@@ -1,0 +1,13 @@
+2017-10-23 10:42:41,321 -root-INFO-LogConfig-<module>-[line:21]:test
+2017-10-23 11:22:41,200 -root-INFO-AppSetting-port_in_use-[line:36]:4723端口未使用
+2017-10-23 11:26:08,561 -root-INFO-webTest-<module>-[line:10]:testsss
+2017-10-23 12:25:05,123 -root-INFO-TravelineOrd-LOG-[line:20]:aa
+2017-10-23 12:25:37,842 -root-INFO-TravelineOrd-set_traveline-[line:39]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-23\12_25_05探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-23\探索页截屏12_25_05.png
+2017-10-23 12:28:32,788 -root-INFO-TravelineOrd-set_traveline-[line:38]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-23\12_27_59探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-23\探索页截屏12_27_59.png
+2017-10-23 13:23:17,091 -root-INFO-TravelineOrd-set_traveline-[line:38]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-23\13_22_45探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-23\探索页截屏13_22_45.png
+2017-10-23 13:25:09,832 -root-INFO-TravelineOrd-set_traveline-[line:38]:跳转探索页面成功，截屏文件为D:\AutoTest\screenshot\sh2017-10-23\13_24_39探索按钮截屏0_1800_270_1911.pngD:\AutoTest\screenshot\sh2017-10-23\探索页截屏13_24_39.png
+2017-10-23 16:57:03,753 -root-INFO-Login-Log_me-[line:26]:首页加载成功！
+2017-10-23 16:57:07,566 -root-INFO-Login-Log_me-[line:35]:我的页面跳转正确
+2017-10-23 16:57:15,742 -root-INFO-Login-Log_me-[line:52]:登录页面跳转成功！
+2017-10-23 16:57:42,568 -root-INFO-Login-Log_on-[line:71]:登录成功！
+2017-10-23 19:05:09,835 -root-INFO-LogConfig-<module>-[line:22]:test

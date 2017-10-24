@@ -57,7 +57,7 @@ class MyTestSuite(unittest.TestCase):
 
         else:
             browser.find_element_by_xpath("//input[@type=\"tel\"]").send_keys("18701913175")
-            browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("54tomwx9154")
+            browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("5412345678")
             browser.find_element_by_xpath("//button[@class=\"gz-btn\"]").click()
             time.sleep(3)
             currentUrl1 = browser.current_url
@@ -232,7 +232,7 @@ if __name__ == '__main__':
     # 构造测试集合
     suite = unittest.TestSuite()
     suite.addTest(MyTestSuite("test_appOrder"))
-    suite.addTest(MyTestSuite("test_rebackOrder"))
+    #suite.addTest(MyTestSuite("test_rebackOrder"))
     #suite.addTest(MyTestSuite("test_appOrder"))
     #suite.addTest(MyTestSuite("test_backOrder"))
     now = time.strftime("%Y-%m-%d %H_%M_%S")

@@ -19,7 +19,7 @@ class Login:
     def __init__(self,wd):
         self.wd = wd
 
-    def Log_on(self):
+    def Log_me(self):
         locat = (By.NAME,"我的")
         try:
            AppSetting.wait(self.wd,20,0.5,EC.presence_of_element_located(locat))
@@ -37,12 +37,14 @@ class Login:
             logger.info(u"我的页面加载超时！")
             raise Exception(u"我的页面加载超时！")
         finally:
-            loginN = self.wd.find_element_by_xpath(
+            pass
+
+
+        loginame = self.wd.find_element_by_xpath(
             "//android.webkit.WebView/android.webkit.WebView[1]/android.view.View[2]/android.view.View").get_attribute("name")
         # content-desc这个属性经过版本更新，原来是name属性所对应的，所以属性值的获取方式还是通过name的方式，如果content-desc为空则取text属性值
-        if loginN == '点击登录':
-            phone = operateEnv.get_variable('appuser')
-            password = operateEnv.get_variable('apppassword')
+        if loginame == '点击登录':
+
             self.wd.find_element_by_xpath(
                 "//android.webkit.WebView/android.webkit.WebView[1]/android.view.View[2]/android.view.View[@content-desc = \"点击登录\"]").click()
             try:
@@ -51,12 +53,8 @@ class Login:
             except:
                 logger.info(u'登录页面跳转有误！')
                 raise Exception(u"登录页面有误！")
-            self.wd.find_element_by_accessibility_id("输入注册手机号").send_keys(phone)
-            self.wd.find_element_by_xpath(
-                "//android.webkit.WebView/android.webkit.WebView[1]/android.widget.EditText[2]").send_keys(password)
-            self.wd.hide_keyboard()  # 隐藏键盘
-            self.wd.find_element_by_accessibility_id("登录").click()
-            locat2 = (By.NAME,"查看并编辑个人资料")
+            Login.Log_on()
+            locat2 = (By.NAME, "查看并编辑个人资料")
             try:
                 AppSetting.wait(self.wd, 20, 0.5, EC.presence_of_element_located(locat2))
                 logger.info(u"登录成功！")
@@ -66,10 +64,23 @@ class Login:
         else:
             logger.info(u"用户已登录！")
 
+    def Log_on(self):
+        phone = operateEnv.get_variable('appuser')
+        password = operateEnv.get_variable('apppassword')
+        self.wd.find_element_by_accessibility_id("输入注册手机号").send_keys(phone)
+        self.wd.find_element_by_xpath(
+            "//android.webkit.WebView/android.webkit.WebView[1]/android.widget.EditText[2]").send_keys(password)
+        self.wd.hide_keyboard()  # 隐藏键盘
+        self.wd.find_element_by_accessibility_id("登录").click()
+
+
+
+
+
 if __name__=='__main__':
     __Appsetting = AppSetting()
     wd = __Appsetting.stat_Appium()
     Login = Login(wd)
-    Login.Log_on()
+    Login.Log_me()
 
 
