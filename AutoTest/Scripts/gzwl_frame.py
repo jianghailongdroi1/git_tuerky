@@ -134,8 +134,8 @@ class MyTestSuite(unittest.TestCase):
         browser.get(webUrl)
         browser.maximize_window()
         time.sleep(1)
-        browser.find_element_by_xpath("//input[@class=\"j-user\"]").send_keys("jianghao")
-        browser.find_element_by_xpath("//input[@class=\"j-pass\"]").send_keys("jh131150")
+        browser.find_element_by_xpath("//input[@class=\"j-user\"]").send_keys("xxxxx")
+        browser.find_element_by_xpath("//input[@class=\"j-pass\"]").send_keys("xxxxx")
         browser.find_element_by_xpath("//button[@id=\"btn_login\"]").click()
         browser.implicitly_wait(4)
         browser.find_element_by_xpath(
