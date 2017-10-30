@@ -57,7 +57,7 @@ class MyTestSuite(unittest.TestCase):
 
         else:
             browser.find_element_by_xpath("//input[@type=\"tel\"]").send_keys("18701913175")
-            browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("5412345678")
+            browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("xxxxxx")
             browser.find_element_by_xpath("//button[@class=\"gz-btn\"]").click()
             time.sleep(3)
             currentUrl1 = browser.current_url
@@ -103,8 +103,8 @@ class MyTestSuite(unittest.TestCase):
       time.sleep(2)
       browser.find_element_by_xpath("//button[text()=\"确认支付\"]").click()
       time.sleep(2)
-      browser.find_element_by_xpath("//input[@type=\"number\"]").send_keys("8800886011003434801")
-      browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("880897")
+      browser.find_element_by_xpath("//input[@type=\"number\"]").send_keys("88008860110xxxxxx")
+      browser.find_element_by_xpath("//input[@type=\"password\"]").send_keys("xxxxxx")
       checkmoney = browser.find_element_by_xpath("//div[@class=\"product-info\"]/div[3]/span[2]").text
       if checkmoney != '¥ 0.01':
           logger.info(u"我只有一分钱！")
